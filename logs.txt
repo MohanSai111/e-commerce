@@ -1,0 +1,3 @@
+{"level":"info","message":"/api/cartItems-{}","service":"user-service"}
+{"level":"info","message":"/-{}","service":"user-service"}
+{"level":"info","message":"/api/user/register-{\"name\":\"vivek\",\" email\":\"krvivi28@gmail.com\",\"password\":\"vivek28@\"}","service":"user-service"}
