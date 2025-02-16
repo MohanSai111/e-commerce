@@ -20,6 +20,7 @@ server.use(express.json());
 
 import apiDocs from './swagger.json' with{type:"json"};
 import { ApplicationError } from './src/error-handler/applicationError.js';
+import connectToMongoDB from './src/config/mongodb.js';
 // for all requests related to product, redirect to product routes.
 // localhost:3200/api/products
 server.use("/api-docs", 
@@ -56,6 +57,8 @@ server.use((req,res)=>{
 })
 
 // 4. Specify port.
-server.listen(3200);
+server.listen(3200,()=>{
+  console.log('Server is running at 3200');
+  connectToMongoDB();
+});
 
-console.log('Server is running at 3200');
