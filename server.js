@@ -20,7 +20,7 @@ server.use(express.json());
 
 import apiDocs from './swagger.json' with{type:"json"};
 import { ApplicationError } from './src/error-handler/applicationError.js';
-import connectToMongoDB from './src/config/mongodb.js';
+import{ connectToMongoDB} from './src/config/mongodb.js';
 // for all requests related to product, redirect to product routes.
 // localhost:3200/api/products
 server.use("/api-docs", 
