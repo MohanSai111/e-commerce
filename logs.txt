@@ -1,3 +1,8 @@
 {"level":"info","message":"/api/cartItems-{}","service":"user-service"}
 {"level":"info","message":"/-{}","service":"user-service"}
 {"level":"info","message":"/api/user/register-{\"name\":\"vivek\",\" email\":\"krvivi28@gmail.com\",\"password\":\"vivek28@\"}","service":"user-service"}
+{"level":"info","message":"/api/products/rate?userID=2&productID=1&rating=4-{}","service":"user-service"}
+{"level":"info","message":"/api/products/rate?userID=2&productID=1&rating=4&-{}","service":"user-service"}
+{"level":"info","message":"/api/products/rate?userID=2&productID=11&rating=4&-{}","service":"user-service"}
+{"level":"info","message":"/api/products/rate?userID=21&productID=1&rating=4&-{}","service":"user-service"}
+{"level":"info","message":"/api/products/rate?userID=21&productID=11&rating=4&-{}","service":"user-service"}

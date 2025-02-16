@@ -1,5 +1,5 @@
 // 1. Import Express
-import express from 'express';
+import express, { application } from 'express';
 import swagger from 'swagger-ui-express';
 import cors from 'cors';
 
@@ -19,6 +19,7 @@ const server = express();
 server.use(express.json());
 
 import apiDocs from './swagger.json' with{type:"json"};
+import { ApplicationError } from './src/error-handler/applicationError.js';
 // for all requests related to product, redirect to product routes.
 // localhost:3200/api/products
 server.use("/api-docs", 
@@ -38,6 +39,15 @@ server.use('/api/users', userRouter);
 // 3. Default request handler
 server.get('/', (req, res) => {
   res.send('Welcome to Ecommerce APIs');
+});
+//error handler middleware
+server.use((err,req,res,next)=>{
+  console.log(err);
+  if(err instanceof ApplicationError){
+    return res.status(err.code).send(err.message)
+  }
+  //server errors
+  return res.status(500).send("something went wrong please try again later");
 });
 
 //404 not found
