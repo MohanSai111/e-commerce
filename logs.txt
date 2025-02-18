@@ -9,3 +9,7 @@
 {"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom.com\",\"password\":\"Password1\",\"name\":\"Seller User\",\"type\":\"seller\"}","service":"user-service"}
 {"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom.com\",\"password\":\"Password1\",\"name\":\"Seller User 2\",\"type\":\"seller\"}","service":"user-service"}
 {"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom.com\",\"password\":\"Password1\",\" name\":\" Seller User\",\"type\":\" seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom.com\",\"password\":\"Password1\",\"name\":\" seller user 4\",\"type\":\"seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom.com\",\"password\":\"Password1\",\"name\":\" Seller User 4\",\"type\":\"seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom.com\",\"password\":\"Password1\",\"name\":\" Seller User 4\",\"type\":\"seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom.com\",\"password\":\"Password1\",\"name\":\" Seller User 4\",\"type\":\"seller\"}","service":"user-service"}
