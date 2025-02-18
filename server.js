@@ -1,4 +1,5 @@
 // 1. Import Express
+import './env.js'
 import express, { application } from 'express';
 import swagger from 'swagger-ui-express';
 import cors from 'cors';
@@ -9,10 +10,14 @@ import jwtAuth from './src/middlewares/jwt.middleware.js';
 import cartRouter from './src/features/cartItems/cartItems.routes.js';
 import logMiddleWare from './src/middlewares/logger.middleware.js';
 
+
 // 2. Create Server
 const server = express();
 //cors policy config
 // server.use(cors())
+
+//load all enviornment varaiables in the application
+
 
 
 

@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import UserRepository from './user.repository.js';
 import bcrypt from 'bcrypt';
 
+
 export default class UserController {
 
   constructor(){
@@ -46,7 +47,7 @@ const hashedPassword = await bcrypt.hash(password, 12)
               userID: result.id,
               email: result.email,
             },
-           'AIb6d35fvJM4O9pXqXQNla2jBCH9kuLz',
+           process.env.JWT_SECRET,
             {
               expiresIn: '1h',
             }
