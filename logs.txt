@@ -24,3 +24,4 @@
 {"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom6.com\",\"password\":\"Password\",\"name\":\"Seller User 6\",\"type\":\"seller\"}","service":"user-service"}
 {"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom6.com\",\"password\":\"Password\",\"name\":\"Seller User 6\",\"type\":\"seller\"}","service":"user-service"}
 {"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom6.com\",\"password\":\"Password\",\"name\":\"Seller User 6\",\"type\":\"seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom4.com\",\"password\":\"Password\",\"name\":\"Seller User 4\",\"type\":\"seller\"}","service":"user-service"}
