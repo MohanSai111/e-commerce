@@ -1,4 +1,4 @@
-import { getDb } from "../../config/mongodb.js";
+import { getDB } from "../../config/mongodb.js";
 import { ApplicationError } from "../../error-handler/applicationError.js";
 
 export default class UserModel {

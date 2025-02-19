@@ -1,6 +1,6 @@
 // 1. Import Express
 import './env.js'
-import express, { application } from 'express';
+import express from 'express';
 import swagger from 'swagger-ui-express';
 import cors from 'cors';
 
@@ -36,7 +36,7 @@ server.use(logMiddleWare);
 
 server.use(
   '/api/products',
-  jwtAuth,
+
   productRouter
 );
 server.use("/api/cartItems", logMiddleWare,jwtAuth, cartRouter);

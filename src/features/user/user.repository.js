@@ -1,4 +1,4 @@
-import { getDb } from "../../config/mongodb.js";
+import { getDB} from "../../config/mongodb.js";
 import { ApplicationError } from "../../error-handler/applicationError.js";
 
 class UserRepository{
@@ -6,7 +6,7 @@ class UserRepository{
      async signUp(newUser) {
         try{
           // 1. Get the database
-        const db = getDb();
+        const db = getDB();
         // 2. Get the collection
         const collection = db.collection("users");
         
@@ -22,7 +22,7 @@ class UserRepository{
       async signIn(email, password) {
         try{
           // 1. Get the database
-        const db = getDb();
+        const db = getDB();
         // 2. Get the collection
         const collection = db.collection("users");
         
@@ -37,7 +37,7 @@ class UserRepository{
       async findByEmail(email) {
         try{
           // 1. Get the database
-        const db = getDb();
+        const db = getDB();
         // 2. Get the collection
         const collection = db.collection("users");
         

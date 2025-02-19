@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb";
-import { getDb } from "../../config/mongodb.js";
+import { getDB } from "../../config/mongodb.js";
 import { ApplicationError } from "../../error-handler/applicationError.js";
 
 class ProductRepository{
@@ -9,7 +9,7 @@ class ProductRepository{
 
   async add(newProduct){ 
     try {
-        const db= getDb();
+        const db= getDB();
         const collection= db.collection(this.collection);
         const result= await collection.insertOne(newProduct);
         return result;
@@ -21,7 +21,7 @@ class ProductRepository{
 
   async getAll(){
     try {
-        const db = getDb();
+        const db = getDB();
         const collection= db.collection(this.collection);
         const result= await collection.find(). toArray();
         return result;
@@ -33,10 +33,10 @@ class ProductRepository{
 
   async get(id){
     try {
-        const db = getDb();
+        const db = getDB();
         const collection= db.collection(this.collection);
-        return await collection.findOne({_id: new ObjectId(id)});
-        
+        const result= await collection.findOne({ _id: ObjectId(id) });
+        return result;
     } catch (err) {
         console.log(err);
         throw new ApplicationError("Something went wrong with database", 500);

@@ -19,3 +19,8 @@
 {"level":"info","message":"/api/products/-{}","service":"user-service"}
 {"level":"info","message":"/api/products/-{}","service":"user-service"}
 {"level":"info","message":"/api/products/-{}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom5.com\",\"password\":\"Password\",\"name\":\"Seller User 5\",\"type\":\"seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom5.com\",\"password\":\"Password\",\"name\":\"Seller User 5\",\"type\":\"seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom6.com\",\"password\":\"Password\",\"name\":\"Seller User 6\",\"type\":\"seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom6.com\",\"password\":\"Password\",\"name\":\"Seller User 6\",\"type\":\"seller\"}","service":"user-service"}
+{"level":"info","message":"/api/users/signup-{\"email\":\"seller@ecom6.com\",\"password\":\"Password\",\"name\":\"Seller User 6\",\"type\":\"seller\"}","service":"user-service"}
